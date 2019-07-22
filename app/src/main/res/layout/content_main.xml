@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relCondutividade"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/colorPrimary"
+        >
+
+        <TextView
+            android:id="@+id/tCondutividade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Condutividade elétrica (ppm):"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorText"
+            />
+
+        <TextView
+            android:id="@+id/editCondutividade"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:inputType="number"
+            android:text="1500"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+
+            android:textColor="@color/colorText"
+
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relOxigenio"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/tOxigenio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="Nível de oxigênio na solução:"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorText"
+            />
+
+        <TextView
+            android:id="@+id/editOxigenio"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|right"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:text="0"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorText"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relPh"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        >
+
+        <TextView
+            android:id="@+id/tPh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pH da solução nutritiva:"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorText"
+            />
+
+        <TextView
+            android:id="@+id/editPh"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:inputType="number"
+            android:text="6,0"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relTemperatura"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
+
+        android:background="@color/colorPrimary"
+        >
+
+        <TextView
+            android:id="@+id/tTemperatura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temperatura (C°):"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorText"
+            />
+
+        <TextView
+            android:id="@+id/editTemperatura"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:inputType="number"
+            android:text="20"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
